@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16825531866071" configfile="/desafiojsf-main/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="370" id="pf16825532505262" outlinks="pf16825532505273 pf16825532505274" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/index.xhtml" x="338" y="178" id="pf16825532505275" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf16825532505273" path="/pages/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="public/login.xhtml" x="338" y="562" id="pf16825532505286" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf16825532505274" path="/public/login.xhtml"/>
+  <links id="pf16825532505273" target="pf16825532505275" source="pf16825532505262" outcome="inicial"/>
+  <links id="pf16825532505274" target="pf16825532505286" source="pf16825532505262" outcome="login" redirect="true"/>
+</pageflow:Pageflow>
