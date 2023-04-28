@@ -1,6 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.conam.desafiojsf</groupId>
 	<artifactId>br.com.conam.desafiojsf</artifactId>
@@ -9,9 +10,14 @@
 	<name>desafioJsf</name>
 	<description>desafioJsf</description>
 	<properties>
+	<Resource name="jdbc/conamDS" auth="Container" type="javax.sql.DataSource"
+    maxActive="100" maxIdle="30" maxWait="10000" maxWaitMillis="-1"
+    username="postgres" password="postgres" driverClassName="org.postgresql.Driver"
+    url="jdbc:postgresql://localhost:5432/desafio"/>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
+	
 		<dependency>
 			<groupId>jakarta.xml.bind</groupId>
 			<artifactId>jakarta.xml.bind-api</artifactId>
